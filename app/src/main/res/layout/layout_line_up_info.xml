@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llLineUpInfo"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_dp_64" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_dp_16"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_content_paidui"
+                android:layout_width="580dp"
+                android:layout_height="340dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/quhaokuang"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="****  过号后请重新取号  ****"
+                    android:textColor="#889393"
+                    android:textSize="@dimen/text_size_24" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/list_item_line_up_info_ywp" />
+
+                        <include layout="@layout/list_item_line_up_info_gc" />
+
+                        <include layout="@layout/list_item_line_up_info_qt" />
+
+                        <include layout="@layout/list_item_line_up_info_gs" />
+
+                        <include layout="@layout/list_item_line_up_info_jf" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMyHandleAffairs"
+                android:layout_width="300dp"
+                android:layout_height="340dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/quhaokuang"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/qu_hao_wode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="我的办事"
+                    android:textColor="#FF8D50"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

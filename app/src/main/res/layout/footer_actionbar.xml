@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_radioGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6CCCD2"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/footer_radio_home"
+        style="@style/widget_button_style"
+        android:checked="true"
+        android:drawableTop="@mipmap/nav01"
+        android:text="首页" />
+
+    <RadioButton
+        android:id="@+id/footer_radio_introduce"
+        style="@style/widget_button_style"
+        android:drawableTop="@mipmap/nav02"
+        android:text="大厅介绍" />
+
+    <RadioButton
+        android:id="@+id/footer_radio_guide"
+        style="@style/widget_button_style"
+        android:drawableTop="@mipmap/nav03"
+        android:text="办事指南" />
+
+    <RadioButton
+        android:id="@+id/footer_radio_my_location"
+        style="@style/widget_button_style"
+        android:drawableTop="@mipmap/nav04"
+        android:text="我的位置"/>
+
+    <RadioButton
+        android:id="@+id/footer_radio_business_space"
+        style="@style/widget_button_style"
+        android:drawableTop="@mipmap/nav05"
+        android:text="创业空间"/>
+
+    <RadioButton
+        android:id="@+id/footer_radio_advertising"
+        style="@style/widget_button_style"
+        android:drawableTop="@mipmap/nav06"
+        android:text="广告"/>
+</RadioGroup>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出入境证件网上预约可享专窗受理"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@+id/tvPublishTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2014-03-21 13:09:28"
+                android:textSize="@dimen/text_size_24" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvBrief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="随着清明假期的临近，本月底将迎来新的办证高峰。近期本市出入境管理部门将推出三项便民措施。"
+            android:textSize="@dimen/text_size_24"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_margin="20dp"
+            android:background="#000000" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#dddddd"
+    android:orientation="vertical">
+
+    <!-- 顶部椭园边缘 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"/>
+    <!-- 中间白色背景,两个TextView,标题和内容,留一个LinearLayout,在代码中根据调用动态加上按钮 -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+            <!-- 在LinearLayout中加按钮 -->
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/layout_dp_8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 底部椭园边缘 -->
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="-2dp" />
+
+</LinearLayout>

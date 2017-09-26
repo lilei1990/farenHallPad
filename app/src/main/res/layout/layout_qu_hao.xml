@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llLineUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlBtn01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu01"/>
+
+                <TextView
+                    android:text="综合服务窗口\n（注册登记类）"
+                    android:gravity="center"
+                    android:id="@+id/tv01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtn02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu02"/>
+
+                <TextView
+                    android:text="综合服务窗口\n(经营许可类)"
+                    android:gravity="center"
+                    android:id="@+id/tv02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtn03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu03"/>
+
+                <TextView
+                    android:text="综合服务窗口\n(投资建设类)"
+                    android:id="@+id/tv03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlBtn04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu04"/>
+
+                <TextView
+                    android:text="工商信息查询"
+                    android:id="@+id/tv04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtn05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu05"/>
+
+                <TextView
+                    android:text="缴费出证"
+                    android:id="@+id/tv05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBtn06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_selector"
+                android:padding="@dimen/layout_dp_16"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="260dp"
+                    android:layout_height="140dp"
+                    android:background="@mipmap/menu01"/>
+
+                <TextView
+                    android:id="@+id/tv06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_32"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

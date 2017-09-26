@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="430dp"
+    android:layout_height="260dp"
+    android:background="@drawable/dialog_new_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/dialog_hint_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/layout_dp_16"
+        android:text="提示"
+        android:textColor="#F8FBFA"
+        android:textSize="@dimen/text_size_24" />
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="一口收件排队，请确认！"
+            android:textColor="#333333"
+            android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_dialog_end"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="@dimen/layout_dp_64"
+            android:background="@drawable/dialog_end_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_22" />
+
+        <TextView
+            android:id="@+id/tv_dialog_enter"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/layout_dp_8"
+            android:background="@drawable/dialog_enter_selector"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size_22" />
+    </LinearLayout>
+</LinearLayout>

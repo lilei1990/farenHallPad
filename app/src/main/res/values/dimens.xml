@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 公用字体大小 -->
+    <dimen name="text_size_10">10.0sp</dimen>
+    <dimen name="text_size_12">12.0sp</dimen>
+    <dimen name="text_size_14">14.0sp</dimen>
+    <dimen name="text_size_16">16.0sp</dimen>
+    <dimen name="text_size_18">18.0sp</dimen>
+    <dimen name="text_size_20">20.0sp</dimen>
+    <dimen name="text_size_22">22.0sp</dimen>
+    <dimen name="text_size_24">24.0sp</dimen>
+    <dimen name="text_size_26">26.0sp</dimen>
+    <dimen name="text_size_28">28.0sp</dimen>
+    <dimen name="text_size_34">34.0sp</dimen>
+    <dimen name="text_size_32">32.0sp</dimen>
+    <dimen name="text_size_45">45.0sp</dimen>
+    <dimen name="text_size_56">56.0sp</dimen>
+    <dimen name="text_size_112">112.0sp</dimen>
+
+    <!-- 公用dp-->
+    <dimen name="layout_dp_4">4dp</dimen>
+    <dimen name="layout_dp_8">8dp</dimen>
+    <dimen name="layout_dp_10">10dp</dimen>
+    <dimen name="layout_dp_12">12dp</dimen>
+    <dimen name="layout_dp_16">16dp</dimen>
+    <dimen name="layout_dp_18">18dp</dimen>
+    <dimen name="layout_dp_20">20dp</dimen>
+    <dimen name="layout_dp_24">24dp</dimen>
+    <dimen name="layout_dp_28">28dp</dimen>
+    <dimen name="layout_dp_32">32dp</dimen>
+    <dimen name="layout_dp_46">46dp</dimen>
+    <dimen name="layout_dp_64">64dp</dimen>
+    <dimen name="layout_dp_80">80dp</dimen>
+    <dimen name="layout_dp_128">128dp</dimen>
+
+
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+
+    <!--图片选择器 -->
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

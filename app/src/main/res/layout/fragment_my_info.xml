@@ -1,0 +1,458 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shyms.farendating.home.user_info.MyInfoFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text=" |  企业基本信息"
+                    android:textSize="@dimen/text_size_24" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="注册名称"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="佛山禅城区永利餐馆"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="注册日期"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="2015-09-02"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="有效期"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_time_end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="2025-09-02 "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="企业类型"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="个体工商户"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="注册地址"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="佛山禅城区发展大厦16楼"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="经营范围"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_scope"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="主营港式特色菜系、茶点的餐厅"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text=" |  法人（负责人）基本信息"
+                    android:textSize="@dimen/text_size_24" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="姓名"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="未知"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="联系电话"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="12315"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="证件类型"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_id_card_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="身份证"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="证件号码"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_id_card_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="21324561324641223"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F5F5F5"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text=" |  其他信息"
+                    android:textSize="@dimen/text_size_24" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="开户银行"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_bank_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="未知"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="#FFFFFF"
+
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="银行账号"
+                    android:textSize="@dimen/text_size_24" />
+
+                <TextView
+                    android:id="@+id/tv_bank_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:padding="@dimen/layout_dp_16"
+                    android:text="未知"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_24" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

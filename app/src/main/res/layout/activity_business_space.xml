@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.shyms.farendating.home.business_space.BusinessSpaceActivity">
+
+    <!--<include layout="@layout/action_bar" />-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:layout_marginTop="?attr/actionBarSize"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <include layout="@layout/actionbar_two"/>
+
+    <WebView
+        android:id="@+id/business_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

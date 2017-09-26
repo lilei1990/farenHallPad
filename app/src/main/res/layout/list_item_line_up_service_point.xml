@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="276dp"
+    android:background="@drawable/transparent_selector"
+    android:gravity="center"
+    android:padding="@dimen/layout_dp_16"
+    android:layout_height="156dp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="260dp"
+        android:layout_height="140dp"
+        android:background="@mipmap/menu01" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_32"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:text="工程报建"/>
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_dp_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_dp_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="流水单号："
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="13215646"
+            android:textSize="@dimen/text_size_24" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_dp_8">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="事项名称："
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="工商预先核名"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toStartOf="@+id/tv_tongguo"
+            android:text="是否通过："
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/tv_tongguo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_marginRight="@dimen/layout_dp_8"
+            android:text="通过"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/text_size_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_dp_8">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前进程："
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/tv_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="预审"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toStartOf="@+id/tv_next_jindu"
+            android:text="下一进程："
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/tv_next_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:text="一口受理"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/text_size_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_dp_8">
+
+        <TextView
+            android:id="@+id/tv_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="受理窗口："
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_windows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toRightOf="@+id/tv_win"
+            android:text="13"
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:layout_toStartOf="@+id/tv_sfcz"
+            android:text="是否需要打印缴费出证："
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/tv_sfcz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:text="是"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/text_size_24" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_dp_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="理由："
+            android:textSize="@dimen/text_size_24" />
+
+        <TextView
+            android:id="@+id/tv_liyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_dp_16"
+            android:text="通过申请"
+            android:textSize="@dimen/text_size_24" />
+    </LinearLayout>
+</LinearLayout>

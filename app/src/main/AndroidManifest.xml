@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.shyms.faren">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!-- 二维码 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 全局对话框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name="me.hokas.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.shyms.farendating.MainActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+
+        </activity>
+        <activity android:name="com.shyms.farendating.home.my_location.MyLocationActivity"/>
+        <activity android:name="com.shyms.farendating.home.business_space.BusinessSpaceActivity"/>
+        <activity android:name="com.shyms.farendating.home.advertising.AdvertisingActivity"/>
+        <activity android:name="com.shyms.farendating.home.introduce.HallIntroduceActivity"/>
+        <activity android:name="com.shyms.farendating.home.my_handle_affairs.material.MyHandleAffairsActivity"/>
+        <activity android:name="com.shyms.farendating.home.guide.GuideActivity"/>
+        <activity android:name="com.shyms.farendating.home.guide.details.MattersDetailsActivity"/>
+        <activity android:name="com.shyms.farendating.home.guide.details.details_list.MattersListActivity"/>
+        <activity android:name="com.shyms.farendating.home.guide.details.details_list.style_table.StyleTableActivity"/>
+        <activity android:name="com.shyms.farendating.home.guide.search.SearchActivity"/>
+        <activity android:name="com.shyms.farendating.home.daoban.DaoBanActivity"/>
+        <activity android:name="com.shyms.farendating.home.login.LoginActivity"/>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.CaptureActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="zxing.appspot.com"
+                    android:path="/scan"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="www.google.com"
+                    android:path="/m/products/scan"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="www.google.co.uk"
+                    android:path="/m/products/scan"
+                    android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="scan"
+                    android:path="/"
+                    android:scheme="zxing"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.PreferencesActivity"
+            android:label="@string/preferences_name"
+            android:stateNotNeeded="true"/>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.encode.EncodeActivity"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.book.SearchBookContentsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/sbc_name"
+            android:screenOrientation="landscape"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.share.ShareActivity"
+            android:screenOrientation="user"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SHARE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.history.HistoryActivity"
+            android:label="@string/history_title"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.share.BookmarkPickerActivity"
+            android:label="@string/bookmark_picker_name"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.share.AppPickerActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_picker_name"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shyms.farendating.home.login.zxing.client.android.HelpActivity"
+            android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shyms.farendating.movie.MovieActivity"/>
+
+        <service android:name="com.shyms.farendating.service.MyService"/>
+
+        <receiver android:name="com.shyms.farendating.home.guide.details.details_list.DownLoadCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.shyms.farendating.home.notice.NoticeMessageActivity"/>
+        <activity android:name="com.shyms.farendating.home.my_handle_affairs.material.MaterialRecorderActivity"/>
+        <activity android:name="com.shyms.farendating.home.my_handle_affairs.material.TakePicActivity"/>
+        <activity android:name="com.shyms.farendating.home.user_info.UserInfoActivity"/>
+        <activity
+            android:name="com.shyms.farendating.http.api.NewMyLocationActivity"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name="com.shyms.farendating.home.company.CompanyIntroduceActivity"
+            android:label="@string/title_activity_company_introduce"/>
+        <activity
+            android:name="com.shyms.farendating.home.introduce.BusinessIntroduceActivity"
+            android:label="@string/title_activity_business_introduce"/>
+        <activity android:name="com.shyms.farendating.service.evaluate.NewEvaluateActivity"/>
+        <activity
+            android:name="com.shyms.farendating.http.api.BugActivity"
+            android:label="@string/title_activity_bug"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.shyms.farendating.home.lien_up.AppointmentActivity"
+            android:label="@string/title_activity_appointment"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name="com.shyms.farendating.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

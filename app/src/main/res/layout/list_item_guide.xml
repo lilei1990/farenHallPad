@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/transparent_selector">
+
+    <LinearLayout
+        android:id="@+id/ll_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_dp_16"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号："
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_bian_hao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:singleLine="true"
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内部有限公司"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ll_a"
+        android:layout_alignRight="@+id/ll_a"
+        android:layout_below="@+id/ll_a"
+        android:layout_margin="@dimen/layout_dp_16"
+        android:layout_marginTop="@dimen/layout_dp_8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="部门："
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/tv_bu_men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工商"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/arrow_right" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dddddd" />
+</RelativeLayout>
